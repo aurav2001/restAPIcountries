@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.center{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.first,.second{
+    width: 100%;
+}
+.first{
+
+    height: 7%;
+
+
+}
+.first form{
+    display: flex;
+    width: 100%;
+}
+.first input {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+/* Button Styling */
+.first button {
+    padding: 10px 25px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.first button:hover {
+    background-color: darkgreen;
+}
+.second{
+    height: 90%;
+    /* background-color: orange; */
+    overflow: auto;
+}
+.second::-webkit-scrollbar{
+    display: none;
+}
+.second .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.container{
+    background-color: orangered;
+    color: white;
+}
+
+.container:nth-child(even){
+    background-color: lightgray;
+    color: navy;
+}
+.second .container .key,
+.second .container .value{
+    width: 50%;
+}
+.value a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1e90ff; /* Dodger Blue */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.value a:hover {
+    background-color: #187bcd;
+    transform: translateY(-2px);
+}
+
+.value a:active {
+    background-color: #155a96;
+    transform: translateY(0);
+}
+
+/* Base styles are for desktop (PC) */
+
+/* Tablet styles (screens between 768px and 1024px) */
+@media screen and (max-width: 1024px) {
+    .center {
+        width: 90%;
+    }
+
+    .first input,
+    .first button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .second .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .second .container .key,
+    .second .container .value {
+        width: 100%;
+    }
+
+    .value a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile styles (screens below 768px) */
+@media screen and (max-width: 767px) {
+    .center {
+        width: 95%;
+    }
+
+    .first form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first input,
+    .first button {
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+
+    .first button {
+        border-radius: 5px;
+    }
+
+    .second .container {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .second .container .key,
+    .second .container .value {
+        width: 100%;
+    }
+
+    .value a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* .second .key, .second .value{
+    width: 50%;
+    /* background-color: orangered;
+    color: white; */
+/* } */ 
+/* .second div:nth-child(even){
+    
+    background-color: orangered;
+    color: white;
+} */
