@@ -91,6 +91,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .value a:hover {
     background-color: #187bcd;
     transform: translateY(-2px);
@@ -178,11 +180,11 @@
 
 /* .second .key, .second .value{
     width: 50%;
-    /* background-color: orangered;
+    /* /* background-color: orangered;
     color: white; */
 /* } */ 
 /* .second div:nth-child(even){
     
     background-color: orangered;
     color: white;
-} */
+} */ */
